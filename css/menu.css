@@ -1,10 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-cinzaFundo: #2B2C28;
+    --cor-azulMarinho:#7DE2D1;
+    --cor-branco: #FFFAFB;
+}
+
 .NavBar {
-    background-color: #ffffff;
+    background-color: var(--cor-cinzaFundo);
+    height: 80px;
 }
 
 .listMenu {
     list-style: none;
-    padding: 0;
     margin: 30px;
     margin-right: 80px;
     display: flex;
@@ -20,11 +31,11 @@
 
 .listMenu li a {
     text-decoration: none;
-    color: #000000;
+    color: var(--cor-branco);
     font-weight: bold;
     padding: 10px 15px;
 }
 
 .listMenu li a:hover {
-    background-color: #1efcde;
+    background-color: var(--cor-azulMarinho);
 }
