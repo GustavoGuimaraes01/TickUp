@@ -1,23 +1,18 @@
-body {
-    margin: 0;
-    padding: 0;
+#carouselExampleIndicators{
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
-
-#carouselExampleIndicators {
-    display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     text-align: center;
-    width: 60%;
-    height: 60%;
-    margin: auto;
+    width: 60%; 
+    height: 60%; 
+    margin: auto; 
 }
-
 footer {
     margin-top: auto;
-    width: 100%;
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    text-align: center; 
 }
