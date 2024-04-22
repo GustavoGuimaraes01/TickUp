@@ -1,3 +1,7 @@
+body{
+    height: 2000px;
+}
+
 .slider{
     margin: 0 auto;
     width: 800px;
@@ -9,6 +13,7 @@
     width: 400%;
     height: 400px;
     display: flex;
+    background-color: aqua;
 }
 
 .slides input{
@@ -97,6 +102,176 @@
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #FFF;
 }
+
+
+
+.slider_cards{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    width: 1200px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.slides_cards{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    
+    
+}
+
+.slides_cards input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 1s;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual_navigation-min{
+    position: absolute;
+    width: 1200px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn-min{
+    border: 2px solid #fa1818;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn-min:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn-min:hover{
+    background-color: #ff0000;
+}
+
+#radio1-min:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2-min:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3-min:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4-min:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto-min div{
+    border: 2px solid rgb(57, 163, 154);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto-min{
+    position: absolute;
+    width: 1200px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto-min div:not(:last-child){
+    margin-right: 10px;
+}
+
+
+
+#radio1-min:checked ~ .navigation-auto-min .auto-btn1-min{
+    background-color: #ff0000;
+}
+#radio2-min:checked ~ .navigation-auto-min .auto-btn2-min{
+    background-color: #ff0000;
+}
+#radio3-min:checked ~ .navigation-auto-min .auto-btn3-min{
+    background-color: #ff0000;
+}
+#radio4-min:checked ~ .navigation-auto-min .auto-btn4-min{
+    background-color: #ff0000;
+}
+
+.card{
+    width: 300px;
+    height: 305px;
+    background: rgb(255, 255, 255);
+    padding: .4em;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    display: flex;
+    margin-right: 30px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+  
+  .card:hover{
+    box-shadow: 0px 0px 10px #888888; 
+    
+  }
+  
+  .card-image {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 180px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  
+
+  .img_evento_min{
+    width: 100%;
+  }
+  
+  .data {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 0px 0px 0px;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 5px;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
 
 footer {
     margin-top: auto;
