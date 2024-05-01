@@ -2,6 +2,19 @@ body{
     height: 2000px;
 }
 
+#titulo{
+    margin-left: 20px;
+}
+
+.mom-categorias{
+    margin: auto;
+    width: 1200px;
+}
+
+#title-categoria{
+    margin-bottom: -20px;
+}
+
 .categorias{
     display: flex;
     justify-content: center;
@@ -9,44 +22,44 @@ body{
 
 .categoria-item{
     width: 140px;
-    height: 150px;
+    height: 120px;
     margin-right: 40px;
     margin: 40px;
-    border-radius: 150px;
+    border-radius: 200px;
     position: relative;
     transition: 0.5s;
 }
 
 .shows-text{
-    margin-top: 110%;
-    margin-left: 18px;
+    margin-top: 90%;
+    margin-left: 10px;
 }
 
 .restaurantes-text{
-    margin-top: 110%;
+    margin-top: 90%;
     margin-left: 25px;
 }
 
 .palestras-text{
-    margin-top: 110%;
+    margin-top: 90%;
     margin-left: 36px;
 }
 
 .stand-text{
-    margin-top: 110%;
+    margin-top: 90%;
     margin-left: 36px;
 }
 
 .teatros-text{
-    margin-top: 110%;
+    margin-top: 90%;
     margin-left: 44px;
 }
 
 .categoria-item img{
-    width: 90px;
+    width: 70px;
     position: absolute;
     top: 20%;
-    left: 18%;
+    left: 25%;
     transition: 0.5s;
 }
 
@@ -55,9 +68,7 @@ body{
     scale: 0.98;
 }
 
-.categoria-item img:hover{
-    scale: 0.9;
-}
+
 
 h3{
     margin-bottom: 40px;
@@ -68,7 +79,7 @@ h3{
     text-transform: uppercase;
     font-size: 0.7em;
     font-weight: 600;
-    color: rgb(63, 121, 230);
+    color: #339989;
     margin-top: 30px;
     margin-left: -370px;
 }
@@ -85,18 +96,32 @@ h3{
 
 }
 
+.mom-slider{
+    margin: auto;
+    margin-top: 120px;
+    width: 1200px;
+    height: 600px;
+}
+
+.eventos-destaque{
+    margin-bottom: -40px;
+}
+
 .slider{
     margin: 0 auto;
     margin-top: 8%;
     width: 1200px;
-    height: 500px;
+    height: 450px;
     overflow: hidden;
     box-shadow: 10px #888888;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #888888; 
+    transition: 0.5s;
 }
 
 .slider:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 10px #888888; 
+    box-shadow: 0px 0px 10px #525252; 
 
 }
 
@@ -120,16 +145,17 @@ h3{
     width: 800px;
 }
 
+
 .manual_navigation{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 1200px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn{
-    border: 2px solid #FFF;
+    border: 2px solid #339989;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -141,7 +167,7 @@ h3{
 }
 
 .manual-btn:hover{
-    background-color: #FFF;
+    background-color: #7DE2D1;
 }
 
 #radio1:checked ~ .first{
@@ -161,7 +187,7 @@ h3{
 }
 
 .navigation-auto div{
-    border: 2px solid rgb(57, 163, 154);
+    border: 2px solid #339989;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -170,8 +196,8 @@ h3{
 
 .navigation-auto{
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
+    width: 1200px;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
 }
@@ -181,16 +207,16 @@ h3{
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FFF;
+    background-color: #7DE2D1;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FFF;
+    background-color: #7DE2D1;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FFF;
+    background-color: #7DE2D1;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #FFF;
+    background-color: #7DE2D1;
 }
 
 
@@ -238,7 +264,7 @@ h3{
 }
 
 .manual-btn-min{
-    border: 2px solid #fa1818;
+    border: 2px solid #339989;
     padding: 5px;
     border-radius: 10px;
     display: flex;
@@ -251,7 +277,7 @@ h3{
 }
 
 .manual-btn-min:hover{
-    background-color: #ff0000;
+    background-color: #7DE2D1;
 }
 
 #radio1-min:checked ~ .first{
@@ -271,7 +297,7 @@ h3{
 }
 
 .navigation-auto-min div{
-    border: 2px solid rgb(57, 163, 154);
+    border: 2px solid #339989;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -293,16 +319,16 @@ h3{
 
 
 #radio1-min:checked ~ .navigation-auto-min .auto-btn1-min{
-    background-color: #ff0000;
+    background-color: #7DE2D1;
 }
 #radio2-min:checked ~ .navigation-auto-min .auto-btn2-min{
-    background-color: #ff0000;
+    background-color: #7DE2D1;
 }
 #radio3-min:checked ~ .navigation-auto-min .auto-btn3-min{
-    background-color: #ff0000;
+    background-color: #7DE2D1;
 }
 #radio4-min:checked ~ .navigation-auto-min .auto-btn4-min{
-    background-color: #ff0000;
+    background-color: #7DE2D1;
 }
 
 
@@ -349,7 +375,7 @@ h3{
     text-transform: uppercase;
     font-size: 0.7em;
     font-weight: 600;
-    color: rgb(63, 121, 230);
+    color: #339989;
     padding: 10px 0px 0px 0px;
   }
   
@@ -371,11 +397,11 @@ h3{
   }
   
 
-footer {
+  footer {
     margin-top: auto;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
     width: 100%; 
     text-align: center; 
