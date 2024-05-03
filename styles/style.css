@@ -397,11 +397,12 @@ h3{
   }
   
 
-  footer {
+  
+footer {
     margin-top: auto;
     position: relative;
     bottom: 0;
-    left: 35%;
+    left: 43%;
     transform: translateX(-50%);
     width: 100%; 
     text-align: center; 
