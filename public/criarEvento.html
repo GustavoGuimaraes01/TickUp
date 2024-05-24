@@ -31,7 +31,7 @@
     <main>
       <div class="col-md-7 col-lg-8">
         
-        <form class="needs-validation" novalidate="">
+        <form class="needs-validation" enctype="multipart/form-data" post="method" novalidate="">
           <h4 class="mb-3">1. Onde o seu evento vai acontecer?</h4>
           <div class="row g-3">
 
@@ -146,7 +146,7 @@
           <div class="row g-3">
             <div class="col-12">
               <label for="nomeEvento" class="form-label">Nome do evento</label>
-              <input type="text" class="form-control" id="nomeEvento" required="">
+              <input asp-for="NomeEvento" name="nomeEvento" type="text" class="form-control" id="nomeEvento" required="">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
@@ -161,13 +161,13 @@
               Formato <span class="text-danger">JPEG, GIF ou PNG de no máximo 2MB</span> .
               Imagens com dimensões diferentes serão redimensionadas.</p>
 
-              <select class="form-select" aria-label="Default select example">
+              <select asp-for="AssuntoEvento" name="assuntoEvento" class="form-select" aria-label="Default select example">
                 <option selected>Assunto</option>
-                <option value="1">...</option>
+                <option  value="1">Baile funk</option>
               </select>
-              <select class="form-select" aria-label="Default select example">
+              <select asp-for="CategoriaEvento" name="categoriaEvento" class="form-select" aria-label="Default select example">
                 <option selected>Categoria</option>
-                <option value="1">...</option>
+                <option value="1">Show</option>
               </select>
 
           </div>
@@ -178,7 +178,7 @@
           <div class="row g-3">
 
             <div class="form-floating">
-              <textarea class="form-control" id="floatingTextarea"></textarea>
+              <textarea asp-for="Observacoes" name="observacoes" class="form-control" id="floatingTextarea"></textarea>
               <label for="floatingTextarea">Conte todos os detalhes do seu evento!</label>
             </div>
           </div>
@@ -190,7 +190,7 @@
 
             <div class="col-12">
               <label for="cep" class="form-label">Data de início</label>
-              <input type="date" class="form-control" id="dataInicio" required="">
+              <input asp-for="DataInicio" name="dataInicio" type="date" class="form-control" id="dataInicio" required="">
               <div class="invalid-feedback">
                 Insira a data de início
               </div>
@@ -198,7 +198,7 @@
 
             <div class="col-12">
               <label for="complemento" class="form-label">Hora de início</label>
-              <input type="datetime" class="form-control" id="horaTermino" required="">
+              <input asp-for="HorarioInicio" name="horarioInicio" type="datetime" class="form-control" id="horaTermino" required="">
               <div class="invalid-feedback">
                 Insira a hora de início
               </div>
@@ -206,7 +206,7 @@
 
             <div class="col-12">
               <label for="cep" class="form-label">Data de término</label>
-              <input type="date" class="form-control" id="dataTermino" required="">
+              <input asp-for="DataTermino" name="dataTermino" type="date" class="form-control" id="dataTermino" required="">
               <div class="invalid-feedback">
                 Insira a data de término
               </div>
@@ -214,7 +214,7 @@
 
             <div class="col-12">
               <label for="complemento" class="form-label">Hora de término</label>
-              <input type="datetime" class="form-control" id="horaTermino" required="">
+              <input asp-for="HorarioTermino" name="horarioTermino" type="datetime" class="form-control" id="horaTermino" required="">
               <div class="invalid-feedback">
                 Insira a hora de término
               </div>
@@ -236,7 +236,7 @@
 
             <div class="col-12">
               <label for="complemento" class="form-label">Quantidade</label>
-              <input type="number" class="form-control" id="quantidade" required="">
+              <input asp-for="Capacidade" name="capacidade" type="number" class="form-control" id="quantidade" required="">
               <div class="invalid-feedback">
                 Insira a quantidade
               </div>
@@ -247,6 +247,14 @@
               <input type="number" class="form-control" id="preco" required="">
               <div class="invalid-feedback">
                 Insira o preço
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="cep" class="form-label">Email para contato</label>
+              <input asp-for="EmailContato" name="emailContato" type="number" class="form-control" id="preco" required="">
+              <div class="invalid-feedback">
+                Insira o email
               </div>
             </div>
           </div>
